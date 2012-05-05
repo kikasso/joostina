@@ -49,6 +49,30 @@ class actionsTest extends joosController {
 			'template' => $tpl
 		);
 	}
+        
+        /**
+	 * Тестирования фунциоанала локализации интерфеса
+	 *
+	 */
+	public static function translator() {
+                joosTranslator::loadTranslation(JPATH_BASE.DS.JPATH_APP.DS.'languages'.DS.'en.php');
+                joosTranslator::loadTranslation(JPATH_BASE.DS.JPATH_APP.DS.'languages'.DS.'en_1.php');
+                
+                //joosTranslator::loadTranslation(JPATH_BASE.DS.JPATH_APP.DS.'languages'.DS.'ua.php','ua');
+               
+		echo _('Привет всему миру от :name', array(':name'=>'Joostina'))."</br>";
+		//echo _('Привет всему миру от :name', 'Joostina')."</br>";
+		echo _('Учим говорить Joostina на разных языках')."</br>";
+		echo _('привет всем')."</br>";
+                
+                
+                //перевод фразы на отличный от текущего языка локализации
+                joosTranslator::loadTranslation(JPATH_BASE.DS.JPATH_APP.DS.'languages'.DS.'ru.php','ru');
+		echo _('Учим говорить Joostina на разных языках',array(),'ru')."</br>";
+                
+                //пытаемся перевести на язык для которо нет перевода
+		echo _('Учим говорить Joostina на разных языках',array(),'ua')."</br>";
+        }
 
 }
 
