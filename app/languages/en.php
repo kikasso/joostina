@@ -1,4 +1,3 @@
-
 <?php
 $_LANG = array(
     'Привет всему миру от :name' => 'Hello world from :name',
