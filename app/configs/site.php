@@ -43,6 +43,7 @@ return array(
     'locale' => array(
         'offset' => 5,
     ),
+    'lang' => 'en',
     'admin' => array(// число объектов по умолчанию на страницах списков
         'list_limit' => 25
     ),

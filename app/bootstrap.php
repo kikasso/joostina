@@ -126,6 +126,9 @@ switch (JENVIRONMENT) {
 
 // установка часового пояса по умолчанию
 (ini_get('date.timezone') != '') ? : date_default_timezone_set('Europe/Moscow');
+		
+//язык локализации интерфейса
+DEFINE('LANG', joosConfig::get('lang'));
 
 // кодировка для строковых функций
 mb_internal_encoding('UTF-8');
