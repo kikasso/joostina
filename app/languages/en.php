@@ -1,7 +1,7 @@
 
 <?php
 $_LANG = array(
-    'Ïðèâåò âñåìó ìèðó îò :name' => 'Hello world from :name',
-    'Ó÷èì ãîâîðèòü Joostina íà ðàçíûõ ÿçûêàõ' => 'Learning to speak in different languages ??Joostina',
+    'ÐŸÑ€Ð¸Ð²ÐµÑ‚ Ð²ÑÐµÐ¼Ñƒ Ð¼Ð¸Ñ€Ñƒ Ð¾Ñ‚ :name' => 'Hello world from :name',
+    'Ð£Ñ‡Ð¸Ð¼ Ð³Ð¾Ð²Ð¾Ñ€Ð¸Ñ‚ÑŒ Joostina Ð½Ð° Ñ€Ð°Ð·Ð½Ñ‹Ñ… ÑÐ·Ñ‹ÐºÐ°Ñ…' => 'Learning to speak in different languages Joostina',
 );
 ?>
